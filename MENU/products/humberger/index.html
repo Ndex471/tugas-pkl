@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milkty : Susu Murni + Hamburger</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../SRC/Icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../../DIST/CSS/app.css">
+    <link rel="shortcut icon" href="../../../SRC/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <main class="container">
+        <div class="relative">
+            <img src="../../../SRC/products/img.jpg" alt="" class="img-top">
+
+            <div class="w-full flex justify-between items-center absolute top-0 p-5">
+                <button class="p-3 bg-white shadow-lg rounded-lg">
+                    <a href="../../menu.html"><i class="bi bi-chevron-left text-2xl"></i></a>
+                </button>
+                <button class="p-3 bg-white shadow-lg rounded-lg">
+                    <i class="bi bi-heart text-2xl"></i>
+                </button>
+            </div>
+
+            <div class="w-max p-4 rounded-lg bg-white shadow-lg count">
+                <button id="minus"><i class="bi bi-dash-lg"></i></button>
+                <input type="number" id="cart-value" value="0" class="w-12 text-center mx-3 text-lg">
+                <button id="plus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+        </div>
+
+        <div class="w-full p-5 mt-7">
+            <div>
+                <section class="flex justify-between">
+                    <h1 class="font-semibold pt-sans text-3xl">Hamburger</h1>
+                    <h1 class="font-semibold pt-sans text-3xl">Rp 20.000,-</h1>
+                </section>
+                <p>Lorem ipsum dolor sit amet </p>
+
+                <div class="w-full my-5 flex justify-between items-center">
+                    <div class="flex items-center">
+                        <i class="bi bi-alarm text-blue-500 text-xl mr-2"></i>
+                        <p>20-30 Min</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="bi bi-star text-yellow-500 text-xl mr-2"></i>
+                        <p>4.8</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="bi bi-lightning-fill text-red-500 text-xl mr-2"></i>
+                        <p>350 kkal</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-8">
+                <h1 class="font-semibold pt-sans text-2xl mb-3">Bahan</h1>
+
+                <div class="flex justify-between gap-3">
+                    <div class="">
+                        <img src="../../../SRC/ingredient/daging.png" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../../../SRC/ingredient/cabai.png" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../../../SRC/ingredient/keju.png" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../../../SRC/ingredient/telur.png" alt="">
+                    </div>
+                    <div class="">
+                        <img src="../../../SRC/ingredient/selada.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="font-semibold pt-sans text-2xl mb-3">Tentang</h1>
+                <p class="text-justify text-lg capitalize">
+                    tomat, keju, daging sapi pilihan, selada, saus barbekyu, saus tomat, ekstra keju mozarella
+                    tomat, keju, daging sapi pilihan, selada, saus barbekyu, saus tomat, ekstra keju mozarella...
+                </p>
+
+                <button class="w-full p-3 rounded-lg bg-brand text-white mt-8 sticky bottom-3" id="add-to-cart">Masukkan Keranjang
+                    -20.000</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../../DIST/JS/count.js"></script>
+</body>
+
+</html>

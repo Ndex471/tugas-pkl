@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milkty : Healthy Milk For Your Nutrition</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../SRC/Icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../DIST/CSS/app.css">
+    <link rel="shortcut icon" href="../SRC/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="container">
+        <div class="flex items-center p-5">
+            <a href="#"><img src="../SRC/logo.png" alt="" class="w-20"></a>
+            <div class="flex mx-auto items-center">
+                <i class="bi bi-geo-alt-fill text-3xl mx-1"></i>
+
+                <input class="focus:outline-none text-lg font-semibold" list="map" id="maps"
+                    placeholder="Cari daerah anda!" value="Jakarta Selatan">
+                <datalist id="map">
+                    <option value="Jakarta" selected>Jakarta</option>
+                    <option value="Karawang">Karawang</option>
+                    <option value="Malang">Malang</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                </datalist>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-2">
+        <div class="p-5">
+            <div class="w-full h-44 bg-gray-300 p-5 rounded-2xl relative">
+                <div>
+                    <h1 class="text-2xl font-bold">Pengiriman tercepat untuk makananmu</h1>
+                    <button class="p-2 px-5 my-3 bg-gray-500 text-white rounded-lg">
+                        <a href="menu.html">Order Sekarang</a>
+                    </button>
+                </div>
+                <img src="../SRC/undraw.svg" class="absolute bottom-0 right-0 w-56">
+            </div>
+        </div>
+
+        <div class="w-full">
+            <h3 class="pl-5 pt-sans text-2xl font-semibold">Explore</h3>
+
+            <div class="explore pl-5">
+                <div class="exp-menu p-4 bg-gray-200 rounded-full active">
+                    <a href="#" class="flex items-center">
+                        <img src="../SRC/moon.svg" class="mr-3">
+                        <p class="font-semibold">Paket Dinner</p>
+                    </a>
+                </div>
+
+                <div class="exp-menu p-4 bg-gray-200 rounded-full">
+                    <a href="#" class="flex items-center">
+                        <img src="../SRC/sun.svg" class="mr-3">
+                        <p class="font-semibold">Paket Launch</p>
+                    </a>
+                </div>
+
+                <div class="exp-menu p-4 bg-gray-200 rounded-full">
+                    <a href="#" class="flex items-center">
+                        <img src="../SRC/moon-2.svg" class="mr-3">
+                        <p class="font-semibold">Paket Dinner</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pl-5 flex flex-wrap items-center gap-5">
+                <div class="p-2 px-7 bg-gray-800 rounded-full text-white">
+                    <!-- active ==> bg-gray-800 text-white -->
+                    <a href="#">Populer</a>
+                </div>
+                <div class="p-2 px-7 bg-gray-200 rounded-full">
+                    <a href="#">Terdekat</a>
+                </div>
+                <div class="p-2 px-7 bg-gray-200 rounded-full">
+                    <a href="#">Promo</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-10">
+            <div class="flex justify-between">
+                <h1 class="pl-5 pt-sans text-2xl font-semibold">Populer Sekarang</h1>
+                <a href="menu.html">Lihat semua <i class="bi bi-chevron-right"></i></a>
+            </div>
+
+            <div class="menu p-5">
+                <div class="menu-item p-3 shadow-lg text-center relative rounded-2xl">
+                    <a href="products/humberger/">
+                        <img src="../SRC/products/susu madu.png" alt="" class="w-40 block mx-auto mb-2">
+                        <h3 class="text-lg font-semibold capitalize">Susu Sapi + Madu</h3>
+                        <p class="text-xs my-2">Neque nec gravida mi sodales in.</p>
+                        <div class="flex items-center justify-center my-3">
+                            <p>50 Min</p>
+                            <span class="mx-2">&#8729;</span>
+                            <span><i class="bi bi-star mr-2 text-yellow-500"></i>4.8</span>
+                        </div>
+                        <h1 class="text-2xl font-bold mt-2 mb-4">Rp 20.000,-</h1>
+                    </a>
+
+                    <button class="absolute top-2 right-2">
+                        <i class="bi bi-heart-fill text-red-500 text-xl"></i>
+                        <!-- bi-heart-fill text-red-500 -->
+                    </button>
+                </div>
+
+                <div class="menu-item p-3 shadow-lg text-center relative rounded-2xl">
+                    <a href="products/humberger/">
+                        <img src="../SRC/products/susu madu.png" alt="" class="w-40 block mx-auto mb-2">
+                        <h3 class="text-lg font-semibold capitalize">Susu Sapi + Madu</h3>
+                        <p class="text-xs my-2">Neque nec gravida mi sodales in.</p>
+                        <div class="flex items-center justify-center my-3">
+                            <p>50 Min</p>
+                            <span class="mx-2">&#8729;</span>
+                            <span><i class="bi bi-star mr-2 text-yellow-500"></i>4.8</span>
+                        </div>
+                        <h1 class="text-2xl font-bold mt-2 mb-4">Rp 20.000,-</h1>
+                    </a>
+
+                    <button class="absolute top-2 right-2">
+                        <i class="bi bi-heart text-xl"></i>
+                        <!-- bi-heart-fill text-red-500 -->
+                    </button>
+                </div>
+
+                <div class="menu-item p-3 shadow-lg text-center relative rounded-2xl">
+                    <a href="products/humberger/">
+                        <img src="../SRC/products/susu madu.png" alt="" class="w-40 block mx-auto mb-2">
+                        <h3 class="text-lg font-semibold capitalize">Susu Sapi + Madu</h3>
+                        <p class="text-xs my-2">Neque nec gravida mi sodales in.</p>
+                        <div class="flex items-center justify-center my-3">
+                            <p>50 Min</p>
+                            <span class="mx-2">&#8729;</span>
+                            <span><i class="bi bi-star mr-2 text-yellow-500"></i>4.8</span>
+                        </div>
+                        <h1 class="text-2xl font-bold mt-2 mb-4">Rp 20.000,-</h1>
+                    </a>
+
+                    <button class="absolute top-2 right-2">
+                        <i class="bi bi-heart text-xl"></i>
+                        <!-- bi-heart-fill text-red-500 -->
+                    </button>
+                </div>
+
+                <div class="menu-item p-3 shadow-lg text-center relative rounded-2xl">
+                    <a href="products/humberger/">
+                        <img src="../SRC/products/susu madu.png" alt="" class="w-40 block mx-auto mb-2">
+                        <h3 class="text-lg font-semibold capitalize">Susu Sapi + Madu</h3>
+                        <p class="text-xs my-2">Neque nec gravida mi sodales in.</p>
+                        <div class="flex items-center justify-center my-3">
+                            <p>50 Min</p>
+                            <span class="mx-2">&#8729;</span>
+                            <span><i class="bi bi-star mr-2 text-yellow-500"></i>4.8</span>
+                        </div>
+                        <h1 class="text-2xl font-bold mt-2 mb-4">Rp 20.000,-</h1>
+                    </a>
+
+                    <button class="absolute top-2 right-2">
+                        <i class="bi bi-heart text-xl"></i>
+                        <!-- bi-heart-fill text-red-500 -->
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full fixed bottom-0 left-0 bg-white border-gray-300 border-t shadow-md">
+        <div class="flex justify-around items-center p-3">
+            <a href="#"><i class="bi bi-house-door-fill text-3xl"></i></a>
+            <a href="#"><img src="../SRC/rocket.svg" alt=""></a>
+            <a href="#"><i class="bi bi-receipt-cutoff text-3xl"></i></a>
+            <a href="#"><i class="bi bi-person-circle text-3xl"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

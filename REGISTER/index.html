@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="../DIST/CSS/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../SRC/Icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../SRC/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <main class="w-full h-full overflow-hidden">
+        <div class="regist">
+            <h1 class="text-center font-bold pt-sans text-3xl my-5">Register</h1>
+
+            <div class="w-full flex justify-around items-center mb-6 relative p-5">
+                <div class="w-14 h-14 bg-brand rounded-full opacity-30 flex items-center justify-center" id="step1">
+                    <i class="bi bi-check text-white text-4xl"></i>
+                </div>
+                <span class="bg-brand h-2 w-1/4 rounded-lg opacity-10" id="sub1"></span>
+                <div class="w-14 h-14 bg-brand rounded-full opacity-30 flex items-center justify-center" id="step2">
+                    <i class="bi bi-check text-white text-4xl"></i>
+                </div>
+                <span class="bg-brand h-2 w-1/4 rounded-lg opacity-10" id="sub2"></span>
+                <div class="w-14 h-14 bg-brand rounded-full opacity-30 flex items-center justify-center" id="step3">
+                    <i class="bi bi-check text-white text-4xl"></i>
+                </div>
+            </div>
+
+            <form action="#" autocomplete="off" class="grid grid-cols-3">
+                <div class="p-3 relative" id="form1">
+                    <fieldset class="w-full my-3 rounded-md">
+                        <legend class="px-2">Nama Lengkap :</legend>
+                        <input type="text" class="w-full focus:outline-none" required>
+                    </fieldset>
+
+                    <fieldset class="w-full my-3 rounded-md">
+                        <legend class="px-2">Username :</legend>
+                        <input type="text" class="w-full focus:outline-none" required>
+                    </fieldset>
+
+                    <fieldset class="w-full my-3 rounded-md">
+                        <legend class="px-2">Email : </legend>
+                        <input type="email" class="w-full focus:outline-none" required>
+                    </fieldset>
+
+                    <button type="button" class="w-full p-3 bg-brand text-white mt-10 mb-3"
+                        id="next1">Selanjutnya</button>
+                </div>
+
+                <div class="p-3 relative hidden" id="form2">
+                    <fieldset class="w-full my-3 rounded-md">
+                        <legend class="px-2">Tempat / Tanggal Lahir :</legend>
+                        <input type="date" class="w-full focus:outline-none" required>
+                    </fieldset>
+
+                    <fieldset class="w-full my-3 rounded-md">
+                        <legend class="px-2">Alamat Lengkap</legend>
+                        <input type="text" class="w-full focus:outline-none" required>
+                    </fieldset>
+
+                    <fieldset class="w-full my-3 rounded-md flex items-center flex-nowrap">
+                        <legend class="px-2">Nomor Handphone :</legend>
+                        <select name="" id="phone" class="focus:outline-none">
+                            <option value="+62">+62</option>
+                        </select>
+                        <input type="text" class="w-full focus:outline-none" required>
+                    </fieldset>
+
+                    <div class="flex flex-nowrap mt-10 mb-3">
+                        <button type="button" class="w-full p-3 border border-gray-800" id="prev1">Prev</button>
+                        <button type="button" class="w-full p-3 bg-brand text-white" id="next2">Next</button>
+                    </div>
+                </div>
+
+                <div class="p-3 relative hidden" id="form3">
+                    <fieldset class="w-full my-3 rounded-md flex items-center flex-nowrap">
+                        <legend class="px-2">Password :</legend>
+                        <input type="password" name="" id="pass" class="w-full focus:outline-none" required>
+                        <button type="button" class="eye-btn"><i class="bi bi-eye-fill text-2xl mx-3"></i></button>
+                    </fieldset>
+
+                    <fieldset class="w-full my-3 rounded-md flex items-center flex-nowrap">
+                        <legend class="px-2">Konfirmasi Password :</legend>
+                        <input type="password" name="" id="re-pass" class="w-full focus:outline-none" required>
+                        <button type="button" class="eye-btn"><i class="bi bi-eye-fill text-2xl mx-3"></i></button>
+                    </fieldset>
+
+                    <div>
+                        <input type="checkbox" name="" id="checkbox" required>
+                        <label for="checkbox">Saya setuju dengan syarat dan ketentuan yang berlaku</label>
+                    </div>
+
+                    <div class="mt-10">
+                        <button type="button" class="w-full p-3 border border-gray-800 mb-3" id="prev2">Prev</button>
+                        <button type="submit" class="w-full p-3 bg-brand text-white">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div class="loading w-full h-full bg-brand fixed top-0 left-0 flex justify-center items-center">
+        <div class="text-center text-white">
+            <h1 class="pt-sans font-bold">Milkty</h1>
+            <h3 class="opacity-60">Healthy Milk For Your Nutrition</h3>
+        </div>
+        <div class="loader">
+            <div class="sk-fading-circle">
+                <div class="sk-circle1 sk-circle"></div>
+                <div class="sk-circle2 sk-circle"></div>
+                <div class="sk-circle3 sk-circle"></div>
+                <div class="sk-circle4 sk-circle"></div>
+                <div class="sk-circle5 sk-circle"></div>
+                <div class="sk-circle6 sk-circle"></div>
+                <div class="sk-circle7 sk-circle"></div>
+                <div class="sk-circle8 sk-circle"></div>
+                <div class="sk-circle9 sk-circle"></div>
+                <div class="sk-circle10 sk-circle"></div>
+                <div class="sk-circle11 sk-circle"></div>
+                <div class="sk-circle12 sk-circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../DIST/JS/main.js"></script>
+</body>
+
+</html>
